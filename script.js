@@ -34,7 +34,7 @@ function Hero(image, top, left, size, speed){
 var hero = new Hero('./doremon.png', 20, 40, 200, 50);
 
 function start(){
-  if((hero.left < window.innerWidth - hero.size) && hero.top <= 0){
+  if((hero.left < window.innerWidth - hero.size) && hero.top < window.innerWidth - hero.size){
     hero.moveRight();
   }
   else if((hero.top < window.innerHeight - hero.size) && (hero.left >= window.innerWidth - hero.size)){
